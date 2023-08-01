@@ -1,0 +1,26 @@
+<h1>{{title}}</h1>
+<br>
+<div class="form-group">
+    <label for="exampleSelect1" class="form-label mt-4">Select Language to Recognize</label>
+    <select class="form-select" id="lang">
+        <option value="" selected disabled>Choose an option</option>
+        <option value="en-US">English</option>
+        <option value="es-ES">Spanish</option>
+        <option value="fr-FR">French</option>
+    </select>
+</div>
+
+<br>
+
+<div class="form-group">
+    <label for="exampleTextarea" class="form-label mt-4">Result</label>
+    <div class="p-3" style="border: 1px solid white; height: 100px; border-radius: 8px;">
+        <span id="final" class="text-light"></span>
+        <span id="interim" class="text-secondary"></span>
+    </div>
+</div>
+
+<br>
+
+<button type="button" id="btnStart" class="btn btn-primary">Listen</button>
+<button type="button" id="btnStop" class="btn btn-danger">Stop</button>
